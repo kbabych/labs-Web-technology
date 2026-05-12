@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Реєстрація на курс</title>
+</head>
+<body>
+
+  <h1>Форма реєстрації на курс</h1>
+
+  <form action="" method="post">
+    
+    <fieldset>
+      <legend>Особисті дані</legend>
+      
+      <div>
+        <label for="firstName">Ім'я</label>
+        <input type="text" id="firstName" name="firstName" required minlength="2">
+      </div>
+      
+      <div>
+        <label for="lastName">Прізвище</label>
+        <input type="text" id="lastName" name="lastName" required minlength="2">
+      </div>
+
+      <div>
+        <label for="date">Дата народження(необов'язково)</label>
+        <input type="date" id="date" name="date">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Дані для входу</legend>
+      
+      <div>
+        <label for="email">Електронна пошта</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      
+      <div>
+        <label for="password">Пароль (мінімум 8 символів)</label>
+        <input type="password" id="password" name="password" required minlength="8">
+      </div>
+
+      <div>
+        <label for="confirmPassword">Підтвердження пароля</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required minlength="8">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Навчальна інформація</legend>
+      
+      <div>
+        <label for="specialty">Оберіть свою спеціальність</label>
+        <select id="specialty" name="specialty" required>
+          <option value="" disabled selected>...</option>
+          <option value="cs">Комп'ютерні науки (КН)</option>
+          <option value="ipz">Інженерія програмного забезпечення (ІПЗ)</option>
+          <option value="am">Прикладна математика (ПМ)</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <div>
+      <input type="checkbox" id="consent" name="consent" required>
+      <label for="consent">Я погоджуюсь з правилами та обробкою даних</label>
+    </div>
+
+    <button>Зареєструватися</button>
+
+  </form>
+
+</body>
+</html>
